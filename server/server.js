@@ -21,6 +21,7 @@ const server = new ApolloServer({
 // Update Express.js to use Apollo server features
 server.applyMiddleware({ app });
 
+// should be true or false?
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

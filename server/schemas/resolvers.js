@@ -37,6 +37,7 @@ const resolvers = {
       return { token, user };
     },
 
+    // what is the args here???
     saveBook: async (parent, args, context) => {
       if (context.user) {
         return User.findOneAndUpdate(
@@ -47,6 +48,8 @@ const resolvers = {
             },
           },
           { new: true }
+          // is this necessary here?
+          // runvalidators: true,
         );
       }
       throw new AuthenticationError('You need to be logged in!');
@@ -58,6 +61,8 @@ const resolvers = {
           { _id: context.user._id },
           { $pull: { savedBooks: { bookId } } },
           { new: true }
+          // is this necessary here?
+          // runvalidators: true,
         );
       }
       throw new AuthenticationError('You need to be logged in!');
