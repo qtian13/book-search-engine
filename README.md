@@ -46,7 +46,7 @@ git clone https://github.com/qtian13/book-search-engine
 * When user click on the Logout button, they are logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
 ## Demo GIF
-![demo gif](./public/assets/images/demo.gif)
+![demo gif](./client/public/assets/images/appDemo.gif)
 
 ## Deployed Page
 https://sheltered-journey-51440.herokuapp.com/
